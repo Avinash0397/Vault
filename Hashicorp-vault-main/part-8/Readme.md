@@ -110,8 +110,4 @@ curl -X GET $VAULT_ADDR/v1/sys/init
 
 The REST API is useful for development and troubleshooting.
 
-## Conclusion
 
-You’ve now successfully deployed HashiCorp Vault in a production mode! In future tutorials, we’ll cover integrating Vault with Terraform on AWS to automate secrets generation and storage.
-
-Stay tuned for more DevOps and security tutorials, and reach out with questions or feedback!
