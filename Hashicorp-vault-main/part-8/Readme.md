@@ -23,6 +23,7 @@ unset VAULT_TOKEN
 Create a configuration file named `config.hcl` to specify Vault’s production settings. Use the following configuration:
 
 ```hcl
+disable_mlock = true
 storage "raft" {
   path    = "./vault/data"
   node_id = "node1"
