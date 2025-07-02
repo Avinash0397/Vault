@@ -1,9 +1,9 @@
 
-# HashiCorp Vault Policy Management Tutorial
+# HashiCorp Vault Policy Management 
 
-This README provides a reference for the commands used in the tutorial on managing policies in HashiCorp Vault.
+This README provides a reference for the commands used in the managing policies in HashiCorp Vault.
 
-## Commands Used in the Tutorial
+## Commands Used 
 
 ### Section 1: Listing Vault Policies
 ```
