@@ -56,12 +56,12 @@ Map your GitHub organization and team with Vault policies.
 
 #### Organization Create:
 ```bash
- vault write auth/github/config organization=vault-demo-s3cloudhub
+ vault write auth/github/config organization=vault-demo
 ```
 
 #### Team Mapping:
 ```bash
-vault write auth/github/map/teams/YOUR_TEAM policies=default,application
+vault write auth/github/map/teams/my_team policies=default,application
 ```
 
 ### Step 4: Login with GitHub Personal Access Token
