@@ -56,7 +56,7 @@ Map your GitHub organization and team with Vault policies.
 
 #### Organization Create:
 ```bash
- vault write auth/github/config organization=vault-demo
+ vault write auth/github/config organization=opstree
 ```
 
 #### Team Mapping:
