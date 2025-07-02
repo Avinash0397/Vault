@@ -97,18 +97,6 @@ This instantly invalidates the dynamically generated credentials.
 | `vault read aws/creds/my-ec2-role`         | Generates dynamic AWS credentials              |
 | `vault lease revoke LEASE_ID`              | Revokes the generated credentials by lease ID  |
 
-## 📹 Video Tutorial
 
-For a detailed walkthrough, check out the video tutorial in this repository or visit our YouTube channel [here](https://www.youtube.com/watch?v=zgC78QRPBfM&list=PL_OdF9Z6GmVZV62x9JI_pk31e2YdHyKuf&pp=iAQB) for the full step-by-step guide.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a pull request.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
 
 By following these steps, you’ll learn to create and manage secure, temporary AWS credentials using HashiCorp Vault. Stay tuned for more tutorials on cloud security and dynamic secrets! 
