@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "us-west-1a"
 }
 
 resource "aws_vpc" "main" {
@@ -130,7 +130,7 @@ resource "aws_security_group" "public" {
 }
 
 resource "aws_instance" "public_instance" {
-  ami                    = "ami-08c40ec9ead489470"
+  ami                    = "ami-080254318c2d8932f"
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.public.id] # Fixed: Use vpc_security_group_ids instead of security_groups
@@ -189,7 +189,7 @@ resource "aws_security_group" "private" {
 }
 
 resource "aws_instance" "vault" {
-  ami                    = "ami-08c40ec9ead489470"
+  ami                    = "ami-080254318c2d8932f"
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.private.id
   vpc_security_group_ids = [aws_security_group.private.id] # Fixed: Use vpc_security_group_ids instead of security_groups
@@ -201,7 +201,7 @@ resource "aws_instance" "vault" {
 
 resource "aws_instance" "consul" {
   count                  = 3
-  ami                    = "ami-08c40ec9ead489470"
+  ami                    = "ami-080254318c2d8932f"
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.private.id
   key_name               = "key"
